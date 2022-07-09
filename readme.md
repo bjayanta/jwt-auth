@@ -10,5 +10,5 @@ For MySQL
 For Postgresql (Windows)
 > pip install psycopg2
 
-For Postgresql (Ubuntu)
+For Postgresql (Ubuntu + Windows)
 > pip install psycopg2-binary
