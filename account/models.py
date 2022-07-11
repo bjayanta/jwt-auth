@@ -40,14 +40,16 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     email = models.EmailField(unique=True, max_length=100)
+    is_verified = models.BooleanField(default=False)
+    otp = models.CharField(max_length=200, null=True, blank=True)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
-
-    objects = UserAccountManager()
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name', 'last_name']
 
+    objects = UserAccountManager()
+    
     def __str__(self):
         return self.email
 

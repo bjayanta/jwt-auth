@@ -1,18 +1,15 @@
+# APP_NAME="JWT Auth"
+# APP_ENV=local
 APP_SECRET_KEY='django-insecure-e@x*w=b53_!h(fm9+su2_0m-jbru1o5bi+@!0d30n7^up-%4b%'
 APP_DEBUG=True
+# APP_URL=http://localhost:8000/
 
 DB_ENGINE='django.db.backends.postgresql' # django.db.backends.mysql
 DB_NAME='jwt_auth'
 DB_USER='postgres'
-DB_PASSWORD='admin'
+DB_PASSWORD='root@2022'
 DB_HOST='localhost'
 DB_PORT='5432' # 3306
-
-# APP_NAME="RMS"
-# APP_ENV=local
-# APP_KEY=base64:hWOb/VScGWUlQ2hcSW+1GAlQbZ97Q7hnWTowtsCuPA8=
-# APP_DEBUG=true
-# APP_URL=http://maxsop-rolebase-auth.test
 
 # LOG_CHANNEL=stack
 # LOG_DEPRECATIONS_CHANNEL=null
