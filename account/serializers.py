@@ -35,7 +35,12 @@ class AccountCreateSerializer(serializers.ModelSerializer):
 
         return user
 
+class VerifyAccountSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    otp = serializers.CharField()
+
 class AccountSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         exclude = ('password',)
+
